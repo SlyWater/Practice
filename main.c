@@ -1,6 +1,15 @@
 ﻿#include "utils.h"
 
+
+
 int main() {
-	printf("Hello, World!\n");
-	return 0;
+    setlocale(LC_ALL, "Russian");
+    int choice;
+
+    do {
+        display_menu();
+        scanf("%d", &choice);
+        handle_menu_choice(choice);
+    } while (choice != 0);
+    return 0;
 }
