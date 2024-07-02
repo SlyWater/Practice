@@ -7,6 +7,7 @@ int main() {
     int choice;
 
     do {
+        //Выводим меню и считываем выбор пользователя
         display_menu();
         scanf("%d", &choice);
         handle_menu_choice(choice);
